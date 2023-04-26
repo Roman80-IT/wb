@@ -52,9 +52,11 @@ h3 {
 
 .wrapper {
   display: flex;
-  gap: 8px;
-  max-width: 1600px;
-  margin: 0 auto;
+  gap: 18px;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin-left: 300px;
+  /* margin: 0 auto; */
 }
 
 /**
@@ -160,6 +162,9 @@ h3 {
 */
 
 .sidebar {
+  float: right;
+  width: 15%;
+
   flex-basis: 300px;
   /* height: 100%; */
   position: fixed;
@@ -236,6 +241,9 @@ h3 {
 
 .content {
   flex-grow: 1;
+
+  float: left;
+  width: 85%;
 }
 
 .sidebar,
@@ -244,11 +252,11 @@ h3 {
   padding: 20px;
 }
 
-section {
-  width: 100%;
-  max-width: 1158px;
+.section {
+  flex-basis: 100%;
+  /* max-width: 1158px; */
   margin: 0 auto;
-  padding: 20px 20px;
+  /* padding: 20px 20px; */
   outline: 2px solid red;
   outline-offset: -2px;
   line-height: 1.5;
