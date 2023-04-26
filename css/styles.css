@@ -1,0 +1,206 @@
+/* style */
+:root {
+  --text-color: white;
+  --bg-color: #2e2f42;
+  --link-color: #7bb0ff;
+  --ifm-code-font-size: 90%;
+  --ifm-code-background: #6e6e6e;
+  --ifm-alert-background: #474747;
+  --ifm-global-radius: 0.4rem;
+  --ifm-code-border-radius: var(--ifm-global-radius);
+  --ifm-pre-padding: 1rem;
+  --prism-background-color: #282a36;
+  --ifm-code-padding-horizontal: 0.2rem;
+  --ifm-code-padding-vertical: 0.07rem;
+  --ifm-alert-border-color: #d4d5d8;
+  --ifm-alert-border-width: 0px;
+  --ifm-alert-border-left-width: 5px;
+  --ifm-alert-border-radius: var(--ifm-global-radius);
+}
+
+p {
+  margin: 0;
+}
+
+/**
+  |============================
+  | SET
+  |============================
+*/
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+section {
+  width: 100%;
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 20px 20px;
+  outline: 2px solid red;
+  outline-offset: -2px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  /* margin-bottom: 20px; */
+  padding: 10px 10px;
+  outline: 2px solid red;
+  outline-offset: -2px;
+  letter-spacing: 0.05em;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* відступи для li-шок */
+.delta {
+  margin-bottom: 8px;
+}
+
+.top-upper {
+  margin-top: 30px;
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+code {
+  background-color: var(--ifm-code-background);
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  border-radius: var(--ifm-code-border-radius);
+  /* font-family: var(--ifm-font-family-monospace); */
+  font-family: inherit;
+  font-size: var(--ifm-code-font-size);
+  padding: var(--ifm-code-padding-vertical) var(--ifm-code-padding-horizontal);
+  margin: 3px;
+}
+
+/**
+  |============================
+  | St
+  |============================
+*/
+
+.link {
+  color: var(--link-color);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.en {
+  color: var(--link-color);
+}
+
+/**
+  |============================
+  | Codepen
+  |============================
+*/
+
+.codepen {
+  display: inline-block;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: var(--link-color);
+  /* text-decoration: none; */
+  /* align-items: center; */
+  margin-bottom: 6px;
+}
+
+/**
+  |============================
+  | УВАГА !  alert
+  |============================
+*/
+
+.alert {
+  max-width: 100%;
+  background-color: var(--ifm-alert-background);
+  border: var(--ifm-alert-border-width) solid var(--ifm-alert-border-color);
+  border-left-width: var(--ifm-alert-border-left-width);
+  border-radius: var(--ifm-alert-border-radius);
+  padding: 20px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/**
+  |============================
+  | Блок Коду
+  |============================
+*/
+
+.codeBlock {
+  max-width: 100%;
+  background-color: var(--ifm-alert-background);
+  /* var(--prism-background-color */
+  padding: 20px 20px;
+  margin-bottom: 30px;
+}
+
+.codeBlockLines {
+  /* float: left; */
+  background-color: var(--ifm-alert-background);
+  font: inherit;
+  min-width: 100%;
+  /* padding: var(--ifm-pre-padding); */
+}
+
+/* .svg-alert {
+  color: white;
+  fill: white;
+  width: 22px;
+} */
+
+/*  контур елемента 
+  outline: 2px solid red;
+  outline-offset: -2px; */
+
+/**
+  |============================
+  | LESSON 5 - Block Model
+  |============================
+*/
+
+.img-1 {
+  max-width: 70%;
+  /* margin: 50px; */
+}
+
+/* === Геометрія елемента === */
+/* Властивість "padding" */
+
+.text {
+  background-color: #fff;
+  line-height: 1.5;
+  border: 2px dashed #212121;
+  padding: 20px;
+}
+
+/* Властивість "margin" */
