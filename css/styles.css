@@ -52,108 +52,21 @@ h3 {
 
 .wrapper {
   display: flex;
-  gap: 18px;
+  gap: 16px;
   justify-content: space-between;
-  max-width: 1400px;
-  margin-left: 300px;
+  max-width: 1600px;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
+
   /* margin: 0 auto; */
 }
 
-/**
-  |============================
-  | Sidebar
-  |============================
-*/
-
-/* Приклад */
-
-/* .sidebar {
-  width: 200px;
+.sidebar,
+.content {
   height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #f1f1f1;
-}
-
-.sidebar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.sidebar li {
-  padding: 8px 16px;
-  border-bottom: 1px solid #ddd;
-}
-
-.sidebar li:last-child {
-  border-bottom: none;
-}
-
-.sidebar a {
-  display: block;
-  color: #000;
-  font-size: 16px;
-  text-decoration: none;
-}
-
-.sidebar ul ul {
-  margin-left: 20px;
-}
-
-.sidebar ul ul li {
-  padding: 4px 16px;
-  border-bottom: none;
-}
-
-.sidebar ul ul li:last-child {
-  margin-bottom: 8px;
-}
-
-.sidebar ul ul a {
-  font-size: 14px;
-  color: #666;
-} */
-
-/* Приклад 2 */
-/* .sidebar {
-  width: 250px;
-  background-color: #f0f0f0;
   padding: 20px;
 }
-
-.menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu li {
-  margin-bottom: 10px;
-}
-
-.menu li a {
-  display: block;
-  font-weight: bold;
-  color: #333;
-  text-decoration: none;
-}
-
-.submenu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: none;
-}
-
-.submenu li {
-  margin-bottom: 5px;
-}
-
-.menu li:hover .submenu {
-  display: block;
-} */
 
 /**
   |============================
@@ -162,18 +75,22 @@ h3 {
 */
 
 .sidebar {
-  float: right;
-  width: 15%;
+  /* === float-обтікання === */
+  /* float: right;
+  width: 15%; */
 
-  flex-basis: 300px;
-  /* height: 100%; */
-  position: fixed;
+  flex-basis: 870px;
+  /* max-width: 880px; */
+
+  /* position: fixed;
   top: 0;
-  left: 0;
-  background-color: var(--bg-color);
+  left: 0; */
+
+  outline: 2px solid red;
+  outline-offset: -2px;
 }
 
-/* Reset */
+/* === RESET === */
 .sidebar ul {
   list-style-type: none;
   margin: 0;
@@ -182,9 +99,10 @@ h3 {
 
 /* Відстані для розділів меню */
 
-.sidebar li {
-  padding: 8px 16px;
+.menu > li {
+  padding: 8px 6px;
   border-bottom: 1px solid #e0e0e0;
+  /* margin-bottom: 10px; */
 }
 
 .sidebar li:last-child {
@@ -198,28 +116,29 @@ h3 {
 }
 
 .sidebar ul ul li {
-  padding: 4px 16px;
-  border-bottom: none;
+  padding: 4px 6px;
+  /* border-bottom: none; */
 }
 
 /* аналог */
-.submenu li {
+/* .submenu li {
   margin-bottom: 5px;
-}
+} */
 
 .sidebar ul ul li:last-child {
-  margin-bottom: 8px;
+  margin-bottom: 0px;
 }
 
 /* Шрифти */
 .sidebar a {
   display: block;
   color: #fff;
+  /* font-weight: bold; */
   font-size: 1.2rem;
   text-decoration: none;
 }
 
-.sidebar ul ul a {
+.submenu a {
   font-size: 1rem;
   color: #666;
 }
@@ -241,15 +160,16 @@ h3 {
 
 .content {
   flex-grow: 1;
+  display: block;
 
-  float: left;
-  width: 85%;
-}
+  /* margin-left: 500px; */
 
-.sidebar,
-.content {
-  height: 100%;
-  padding: 20px;
+  outline: 2px solid red;
+  outline-offset: -2px;
+
+  /* === float-обтікання === */
+  /* float: left;
+  width: 85%; */
 }
 
 .section {
@@ -257,10 +177,12 @@ h3 {
   /* max-width: 1158px; */
   margin: 0 auto;
   /* padding: 20px 20px; */
-  outline: 2px solid red;
-  outline-offset: -2px;
+
   line-height: 1.5;
   letter-spacing: 0.05em;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
 }
 
 .container {
